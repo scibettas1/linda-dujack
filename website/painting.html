@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assemblages</title>
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="description" content="The Art of Linda Dujack" />
+        <meta name="keywords" content="art, artist, linda dujack, abstract art, 3d design, mixed media, sculpture, found art" />
+        <link rel="stylesheet" type="text/css" href="css/linda.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+	<?php 
+/* Short and sweet */
+define('WP_USE_THEMES', false);
+require('./wp-blog-header.php');
+?>
+		<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+    </head>
+    <body>
+		<div class="container">
+			<div class="header">
+				<img src="images/name.png" height="100px" hspace="20px" vspace="10px"></div>
+				<div class="clr"></div>
+				<div id="navbar">
+  					<a href="index.html">Home</a>
+  					<a href="assemblages.html">Assemblages</a>
+  					<a href="mixed.html">Mixed Media</a>
+  					<a href="painting.html">Paintings</a>
+  					<a href="contact.html">Contact & Resume</a>
+				</div>
+				<!-- header -->
+			
+			<div class="content">
+				<h1>Paintings<span>Acrylic & Watercolor</span></h1>
+				<div id="rg-gallery" class="rg-gallery">
+					<div class="rg-thumbs">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper">
+							<div class="es-nav">
+								<span class="es-nav-prev">Previous</span>
+								<span class="es-nav-next">Next</span>
+							</div>
+							<div class="es-carousel">
+								<ul>
+									<li><a href="#"><img src="images/thumbs/thumb1887.jpg" data-large="images/painting/img_1887.jpg" alt="image01" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb1917.jpg" data-large="images/painting/img_1917.jpg" alt="image02" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb1930.jpg" data-large="images/painting/img_1930.jpg" alt="image03" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb6809.jpg" data-large="images/painting/img_6809.jpg" alt="image04" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb6813.jpg" data-large="images/painting/img_6813.jpg" alt="image05" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb6815.jpg" data-large="images/painting/img_6815.jpg" alt="image06" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb6816.jpg" data-large="images/painting/img_6816.jpg" alt="image07" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb6817.jpg" data-large="images/painting/img_6817.jpg" alt="image08" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb6858.jpg" data-large="images/painting/img_6858.jpg" alt="image09" /></a></li>
+									<li><a href="#"><img src="images/thumbs/thumb6961.jpg" data-large="images/painting/img_6961.jpg" alt="image10" /></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- rg-gallery -->
+				</div><!-- content -->
+		</div><!-- container -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+		
+	<div class="footer">
+        <a href="index.html">Home</a> |
+  		<a href="assemblages.html">Assemblages</a> |
+  		<a href="mixed.html">Mixed Media</a> |
+  		<a href="painting.html">Paintings</a> |
+  		<a href="contact.html">Contact & Resume</a><br><br>
+		Copyright &#169; Linda Dujack 2019 All Rights Reserved<br />
+		Web Design by<a href="mailto:samantha.scibetta@gmail.com">Samantha Scibetta</div>
+    </body>
+</html>
